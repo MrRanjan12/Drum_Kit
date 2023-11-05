@@ -48,7 +48,11 @@ footer {
 }
 
 .set {
-  margin: 10% auto;
+  margin: 5% auto;
+  display: flex;
+    flex-wrap: wrap; /* Allow the buttons to wrap to the next line on smaller screens */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons virtically*/
 }
 
 .game-over {
