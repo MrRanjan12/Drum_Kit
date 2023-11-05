@@ -35,8 +35,8 @@ document.querySelectorAll("button")[i].addEventListener("click",function(){
     var audio = new Audio('sounds/kick-bass.mp3');
     audio.play();
   break;
-  default: console.log("buttonInnerHtml");
-    break;
+  default: console.log(buttonInnerHtml);
+    
  }
    
 });
