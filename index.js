@@ -1,4 +1,4 @@
-v//detecting button press;
+//detecting button press;
 
 var numberOfDrrumbutton=document.querySelectorAll(".drum").length;
 
