@@ -9,7 +9,7 @@ document.querySelectorAll("button")[i].addEventListener("click",function(){
     //what to do when click is detected;
    var buttonInnerHtml=this.innerHTML;
    makesound(this.innerHTML);
-   
+   buttonAnimation(buttonInnerHtml);
 });
 }
 
@@ -17,6 +17,7 @@ document.querySelectorAll("button")[i].addEventListener("click",function(){
 
 document.addEventListener("keydown",function(event){
     makesound(event.key);
+   buttonAnimation(event.key);
 });
 
 function makesound(key){
@@ -53,6 +54,14 @@ function makesound(key){
     default: console.log(buttonInnerHtml);
        
    }
+}
+function buttonAnimation(currentKey){
+ var activeButton= document.querySelector("."+currentKey);
+ activeButton.classList.add("pressed");
+
+ setTimeout(function(){
+  activeButton.classList.remove("pressed");
+ },100);
 }
 /*   var audio = new Audio('sounds/crash.mp3');
   audio.play();  
