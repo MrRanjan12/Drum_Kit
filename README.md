@@ -1,5 +1,5 @@
 # Drum_Kit
-You can play drrum  using  button press 
+You can play drum  using  button press 
 and also pressing same key as shown on drum;
 
  thanks,
